@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="refresh" content="0; URL=MainController">
+        <title>JSP Page</title>
+        <link rel="sheetstyle" href="style.css">
+    </head>
+    <body>
+        <div class="interface" style="background-image: url('assets/images/background4.jpg')">
+            <div class="header-contain" id="box">
+                <div class="header">
+                    <div class="logo">
+                        <a href="welcome.jsp">
+                            <img id="logo-loka" src="assets/images/logo_white.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="menu-header">
+                        <div class="font-img">
+                            <a><img src="assets/images/Flag_of_Vietnam.svg.webp" alt="Vietnam"> VI|VND</a>
+                            <a><img src="assets/images/z6617569047609_e399b667d5c7329885d626bf441edd58-removebg-preview.png" alt="discount"> Khuyến mãi</a>
+                            <a href="#">Hỗ trợ</a>
+                            <a href="#">Hợp tác với chúng tôi</a>
+                            <a href="#">Đặt chỗ của tôi</a>
+                        </div>
+                        <div class="button">
+                                    <a class="login" href="login.jsp">
+                                        <img id="user-logo-login" src="assets/images/user-white.png" alt="login icon">
+                                        Đăng nhập
+                                    </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <a href="MainController?action=displayAllHotel">Khách sạn</a>
+                    <a href="plane.jsp">Vé máy bay</a>
+                </div>
+            </div>
+
+            <div class="search-hotel">
+                <div class="form-bar">
+                    <p id="hn">Thành phố hoặc tên khách sạn:</p>
+                    <p>Ngày nhận phòng:</p>
+                    <p>Ngày trả phòng:</p> 
+                    <p>Khách và Phòng:</p>
+                </div>
+
+                <div class="search-bar">
+                    <form action="MainController" method="post" accept-charset="UTF-8">
+                        <input type="hidden" name="action" value="searchHotel">
+
+                        <!-- Thành phố -->
+                        <div class="search-group-1">
+                            <img src="assets/images/location-removebg-preview.png" alt="Location icon" />
+                            <input type="text" name="keyword" id="keyword" placeholder="Thành phố, khách sạn, điểm đến" required="required" />
+                        </div>
+
+                        <!-- Ngày nhận -->
+                        <div class="search-group-2">
+                            <img src="assets/images/lịch-removebg-preview.png" alt="Calendar icon" />
+                            <input type="date" id="checkin" name="checkin" required="required"/>
+                        </div>
+
+                        <!-- Ngày trả -->
+                        <div class="search-group-3">
+                            <img src="assets/images/lịch-removebg-preview.png" alt="Calendar icon" />
+                            <input type="date" id="checkout" name="checkout" required="required"/>
+                        </div>
+
+                        <!-- Khách & phòng -->
+                        <div class="search-group-4">
+                            <img src="assets/images/lịch-removebg-preview.png" alt="Calendar icon" />
+
+                            <div class="capacity-inputs">
+                                <label>
+                                    <input type="number" name="adults" id="adults" min="1"/> người lớn
+                                </label>
+                                <label>
+                                    <input type="number" name="children" id="children" min="0"/> trẻ em
+                                </label>
+                                <label>
+                                    <input type="number" name="rooms" id="rooms" min="1"/> phòng
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Nút tìm kiếm -->
+                        <button class="search-button" type="submit">
+                            <img src="assets/images/search (1).png" alt="Search icon"/>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
