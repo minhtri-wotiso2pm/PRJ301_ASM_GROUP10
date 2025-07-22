@@ -59,7 +59,7 @@
                                                     <input type="submit" value="Delete">
                                                 </form>
                                             </td>
-                                        </c:if>s
+                                        </c:if>
                                     </tr>
                                 </c:forEach>
                             </tbody>
