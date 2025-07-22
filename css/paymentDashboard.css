@@ -1,0 +1,124 @@
+/* paymentDashboard.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+}
+
+.payment-container {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+}
+
+.payment-header h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.coupon-section {
+    margin-bottom: 25px;
+}
+
+.coupon-section h3 {
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+.coupon-input {
+    width: calc(100% - 140px);
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.add-coupon-btn {
+    padding: 10px 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.add-coupon-btn:hover {
+    background-color: #2980b9;
+}
+
+.price-display {
+    margin: 25px 0;
+    font-size: 17px;
+    color: #2c3e50;
+}
+
+.price-amount {
+    font-weight: bold;
+    color: #e74c3c;
+    font-size: 18px;
+}
+
+.payment-methods h3 {
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+.payment-methods label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.payment-methods input[type="radio"] {
+    margin-right: 10px;
+}
+
+.qr-section {
+    text-align: center;
+    margin: 25px 0;
+    padding: 20px;
+    border: 1px dashed #95a5a6;
+    border-radius: 8px;
+    background-color: #fefefe;
+}
+
+.qr-section img {
+    width: 200px;
+    height: auto;
+    margin: 15px 0;
+}
+
+.qr-section h4 {
+    margin-bottom: 10px;
+    color: #2d3436;
+}
+
+.submit-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.submit-btn {
+    background-color: #27ae60;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #1e8449;
+}

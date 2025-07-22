@@ -1,0 +1,79 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Jun 18, 2025, 12:42:16 PM
+    Author     : nzero
+*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eef3f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    width: 320px;
+    text-align: center;
+}
+
+.avatar img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #d3ecfa;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #54b0e3;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form-error {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"], input[type="button"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #2ca9e1;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: #238ec2;
+}

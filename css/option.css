@@ -1,0 +1,64 @@
+/* Khung menu */
+.dropdown-menu {
+    width: 240px;
+    height: 100%; /* Thay vì 100vh */
+    background-color: #f5f5f5;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    flex-shrink: 0;
+    overflow-y: auto; /* Thêm nếu menu dài quá */
+    text-align: left; /* Đảm bảo chữ căn trái */
+}
+
+/* Phần tiêu đề hồ sơ */
+.task-header h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.task-header h4 {
+    font-size: 14px;
+    color: #777;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Danh sách menu */
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.dropdown-menu ul li {
+    margin-bottom: 15px;
+    margin-left: 0; /* Không bị lệch vào */
+}
+
+/* Link trong menu */
+.dropdown-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: flex; /* để icon + chữ cùng hàng */
+    align-items: center;
+    justify-content: flex-start; /* Căn hết về bên trái */
+    gap: 8px; /* Khoảng cách nhỏ giữa icon và chữ */
+    padding-left: 0; /* Không padding thừa */
+    margin-left: 0;
+}
+
+/* Icon trong menu */
+.dropdown-menu ul li img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0; /* Giữ icon cố định không bị co */
+}
+
+form input[type="submit"] {
+    border: none;         /* Bỏ viền */
+    outline: none;  /* Làm nền trong suốt (nếu muốn) */
+    cursor: pointer;  
+}

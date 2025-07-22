@@ -1,0 +1,367 @@
+.search-hotel {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.main-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.thumbnail {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    padding: 20px;
+}
+
+.hotel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.hotel-title {
+    flex: 1;
+}
+
+.hotel-title h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.hotel-category {
+    color: #3498db;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.stars {
+    color: #f39c12;
+    margin-bottom: 5px;
+}
+
+.location {
+    color: #27ae60;
+    font-weight: 600;
+}
+
+.price-section {
+    text-align: right;
+}
+
+.price-label {
+    color: #666;
+    font-size: 14px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.book-btn {
+    background: #ff6b35;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.book-btn:hover {
+    background: #e55a2b;
+}
+
+.availability-notice {
+    background: #e3f2fd;
+    border: 1px solid #2196f3;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.availability-notice i {
+    color: #2196f3;
+    font-size: 20px;
+}
+
+.availability-notice span {
+    color: #1976d2;
+    font-weight: 600;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.rating-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.rating-score {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.score {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.score-detail {
+    color: #666;
+}
+
+.user-review {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid #3498db;
+    margin-top: 15px;
+}
+
+.user-review .rating {
+    color: #f39c12;
+    margin-bottom: 5px;
+}
+
+.location-section h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.location-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.location-item i {
+    color: #3498db;
+    width: 20px;
+}
+
+.location-name {
+    flex: 1;
+    color: #2c3e50;
+}
+
+.distance {
+    color: #666;
+    font-size: 14px;
+}
+
+.amenities-section h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.amenity-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.amenity-item i {
+    color: #3498db;
+    font-size: 18px;
+    width: 20px;
+}
+
+.amenity-name {
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.view-more {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.view-more:hover {
+    text-decoration: underline;
+}
+.review-container {
+    max-height: 250px; /* hoặc 300px tùy ý bạn */
+    overflow-y: auto;
+    margin-top: 10px;
+    padding-right: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+/* Thêm một số tùy chỉnh để đánh giá nhìn đẹp hơn */
+.review {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+.review .score {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 5px;
+}
+.room-card {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+}
+
+.room-image {
+    flex: 0 0 300px;
+    height: 220px;
+    overflow: hidden;
+}
+
+.room-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-right: 1px solid #eee;
+}
+
+.room-info {
+    flex: 1;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 15px;
+}
+
+.room-info > div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.room-detail {
+    color: #333;
+    font-size: 14px;
+}
+
+.price {
+    font-weight: bold;
+    color: #f60;
+    font-size: 18px;
+}
+
+.select-btn {
+    background-color: #008cff;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    width: fit-content;
+}
+
+.quantity-left {
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 5px;
+}

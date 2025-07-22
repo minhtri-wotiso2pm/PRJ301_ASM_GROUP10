@@ -1,0 +1,2875 @@
+form-plane {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 26%;
+    font-weight: bold;
+}
+
+
+.form-place,.form-date{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.form-place p{
+    margin-right: 220px;
+    color: black;
+}
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : May 18, 2025, 6:24:24 PM
+    Author     : nzero
+*/
+
+.header{
+    display: flex;
+    justify-content:  space-between;
+    vertical-align: top;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+#box{
+    transition: background-color 0.3s ease;
+}
+
+.interface {
+    width:100%;
+    height: 500px; /* hoặc dùng min-height nếu cần linh hoạt */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo{
+    padding-left: 30px;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.menu-header{
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+.font-img{
+    display: flex;
+    padding: 2px 10px;
+    vertical-align: middle;
+    margin-top: 2px;
+}
+
+.font-img a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.font-img img,.discount img{
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.button a.login,
+.button a.login-wel{
+    border: 1px solid #007BFF;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.task-header{
+    border: 1px solid;
+    background-color: #c69165;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.task-header img{
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 57%;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: none;
+    width: 300px;
+    margin-right: 28px;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0px;
+}
+
+.dropdown-menu ul li {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.dropdown-menu ul li img{
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.dropdown-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.login,.login-wel{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.register {
+    padding: 10px;
+    color: white;
+    border: 1px solid #007BFF;
+    background-color: #007BFF;
+    text-decoration: none;
+border-radius: 4px;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+.button img{
+    width: 35px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.menu{
+    padding-top: 10px;
+    padding-left: 22px;
+    padding-bottom: 10px;
+    border-block: 1px solid #68717640;
+}
+
+.menu a,.link-button{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: sans-serif;
+    color: white;
+}
+
+.font-img a, .menu a,.login-wel,.link-button {
+    transition: all 0.3s ease;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.link-button{
+    padding: 11.5px 5px;
+}
+
+.font-img a:hover,
+.menu a:hover,
+.login-wel a:hover,
+.link-button:hover{
+    background-color: rgba(255,255,255,0.1);
+    transform: scale(1.03);
+    color: #f0f0f0;
+}
+
+/* Tuỳ chọn override */
+.font-img a:hover.hover-black,
+.menu a:hover.hover-black,
+.login-wel:hover.hover-black,
+.link-button:hover.hover-black{
+    background-color: #00000040;
+}
+
+.font-img a:hover.hover-white,
+.menu a:hover.hover-white,
+.login-wel:hover.hover-white,
+.link-button:hover.hover-white{
+    background-color: #f2f3f3;
+    color: black;
+}
+
+.text-black {
+    color: black !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.white-bg {
+    background-color: white !important;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+.grey-bg{
+    background-color: #0D2C54;
+}
+
+.header-contain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.booking-menu {
+    display: flex;
+    gap: 20px;
+    padding-top: 115px;
+    padding-bottom: 10px;
+    background: transparent;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    margin: 0px 38px;
+}
+
+.booking-item {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #E1E3E6;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.booking-item img {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.booking-item.active {
+    background-color: white;
+    color: #03121a; /* xanh đậm như Booking.com */
+    border: 1px solid #fff;
+}
+
+.booking-item:not(.active):hover {
+    background-color: rgba(255,255,255,0.1);
+    color: #fff;
+}
+
+.booking-hotel {
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.hotel{
+    margin-bottom: 30px;
+}
+.hotelcs {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    gap: 6px;
+    padding: 3px 7px;
+    border-radius: 30px;
+    background-color: #03121a4d;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.hotelcs img {
+    width: 25px;
+    height: auto;
+    vertical-align: middle;
+}
+.hotelcs.active-hotel {
+    background-color: #0194f3;
+    color: white;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* căn giữa toàn bộ nội dung */
+    gap: 30px; /* khoảng cách giữa hai ảnh, chỉnh số tùy ý */
+    margin-top: 50px; /* tùy chỉnh thêm nếu cần căn giữa theo chiều dọc */
+}
+
+.image-container img {
+    width: 600px;
+    border-radius: 10px;
+    height: auto;
+}
+
+.content-sale {
+    width: 100%;
+    display: block;
+    justify-content: center; /* Căn giữa phần tử h1 */
+    padding-top: 40px;
+}
+
+.content-sale h1 {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28px;
+    width: 80%;
+    text-align: left;       /* Căn chữ về bên trái trong khối h1 */
+    padding-left: 10px;
+    margin:0 130px;              /* Xóa margin mặc định nếu cần */
+}
+
+.content-sale p{
+    width: 80%;
+    margin:-5px 130px;
+    padding-left: 10px;
+    text-align: left;
+    font-weight: 600;
+    color: gray;
+    line-height: 24px;
+}
+
+.content-sale-choice {
+    width: 80%;
+    padding-left: 125px; /* Căn lề trái */
+    padding-top: 30px;
+}
+
+.nav.navbar-nav {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* khoảng cách giữa các mục */
+}
+
+.nav.navbar-nav li {
+    display: inline;
+}
+
+.nav.navbar-nav li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav.navbar-nav li a:hover,
+.nav.navbar-nav li.active a {
+    background-color: #f2f2f2;
+    color: #007BFF;
+}
+
+
+/*  */
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f9fc;
+    margin: 0;
+}
+
+.container {
+    max-width: 82%;
+    margin: auto;
+    position: relative;
+    z-index: 1 !important; /* Đảm bảo thấp hơn header */
+}
+
+.voucher-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1 !important;
+}
+
+.voucher {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    position: relative;
+    z-index: 1 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.voucher:hover {
+    transform: translateY(-2px); /* Giảm độ nổi để tránh đè header */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.voucher .tag {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: orange;
+    color: white;
+    padding: 2px 6px;
+    font-size: 12px;
+    border-radius: 4px;
+    z-index: 2; /* Chỉ cao hơn voucher */
+}
+
+/* Đảm bảo tất cả element con của voucher có z-index thấp */
+.voucher * {
+    position: relative;
+    z-index: auto !important;
+}
+
+/* CSS cho tabs */
+.tabs {
+    margin: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.tab {
+    padding: 8px 16px;
+    background: #e0e0e0;
+    border: none;
+margin-right: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.tab.active {
+    background: #1e88e5;
+    color: white;
+    text-decoration: none;
+}
+
+.tab:hover {
+    background: #42a5f5;
+    color: white;
+    text-decoration: none;
+}
+
+/* CSS cho code section */
+.code {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px dashed #ccc;
+    position: relative;
+    z-index: 1;
+}
+
+.code button {
+    padding: 6px 12px;
+    border: none;
+    background: #90caf9;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+.section {
+    max-width: 82%;
+    margin: auto;
+    padding-top: 30px ;
+}
+
+.section-title {
+    color: #1e88e5;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background: #e6f0ff;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content h4 {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.rating {
+    color: #f5a623;
+    font-weight: bold;
+}
+
+.price {
+    color: #d0021b;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 0.9em;
+}
+
+.tag {
+    background-color: #fcebeb;
+    color: #d0021b;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    display: inline-block;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+/*  */
+
+
+/*  */
+.footer {
+    background-color: #1c2930;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 40px 30px;
+}
+
+.footer-col-1{
+    margin-right: -20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.certificates img {
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.cooperate {
+    display: flex;
+    align-items: center;
+    background-color: #354148;
+    padding: 10px 14px;
+    border-radius: 10px;
+    margin: 10px 0;
+    width: fit-content;
+}
+
+.cooperate img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.partner p {
+    font-weight: bold;
+    margin: 10px 0 5px;
+    padding-top: 2%;
+}
+
+.payment-logos img {
+    background-color: #fff;
+border-radius: 8px;
+    padding: 2px 6px;
+    margin: 2px;
+    width: 60px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.footer-title {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-title-1 {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.footer-col ul li {
+    margin: 15px 0px;
+    color: #b0b8bc;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer-col a{
+    text-decoration: none;
+    color: #b0b8bc;
+}
+
+.app-download img {
+    width: 140px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+/* PLANE */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5faff;
+}
+
+.hero {
+    /* position: relative; */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    border-radius: 24px;
+    margin: 20px;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 280px;
+}
+
+.image-plane-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.image-plane-container img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 140px;
+    left: 40px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.search-box {
+    position: absolute;
+    bottom: -160px;
+    left: 100px;
+    right: 100px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.trip-types {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.trip {
+    padding: 8px 16px;
+    background: #e6f3ff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.trip.selected {
+    background: #008cff;
+    color: white;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.switch-icon {
+    align-self: center;
+    font-size: 18px;
+}
+
+.options-row {
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.hotelcs,.flightcs {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    border-radius: 30px;
+    background-color: #03121a4d;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hotelcs{
+    padding: 3px 7px;
+}
+
+.flightcs{
+    padding: 8.5px 10px;
+}
+
+.active-content {
+    background-color: #007bff;
+    color: white;
+}
+
+.hotelcs img {
+    width: 25px;
+}
+
+.tab-content {
+    display: none;
+    margin: 10px 0px 0px 35px;
+}
+
+.tab-content.active {
+    display: flex;
+}
+
+/* Căn các nhãn nằm ngang */
+.form-bar {
+    display: flex;
+    margin-left: 40px;
+    font-weight: bold;
+}
+.form-bar p{
+    margin-right: 104px;
+}
+
+#hn{
+    margin-right: 175px;
+}
+
+/* Form tìm kiếm khách sạn */
+.search-hotel {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Căn các input thẳng hàng dưới form-bar */
+.search-bar {
+    width: 98%;
+    margin-left: 20px;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    height: 58px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Các khối input */
+.search-group-1,
+.search-group-2,
+.search-group-3,
+.search-group-4 {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #eee;
+    background-color: #fff;
+    height: 30px;
+}
+
+.search-group-1 {
+    margin-left: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 10px 21px;
+}
+
+.search-group-2 {
+    padding: 10px 31px;
+}
+
+.search-group-3 {
+    padding: 10px 23px;
+}
+
+.search-group-4 {
+    padding: 10px 40px;
+}
+
+.search-group-4:last-child {
+    border-right: none;
+}
+
+/* Icon */
+.search-group-1 img,
+.search-group-2 img,
+.search-group-3 img,
+.search-group-4 img {
+    width: 28px;
+    height: auto;
+    margin-right: 12px;
+}
+
+/* Input: chữ căn trái, không viền */
+.search-group-1 input,
+.search-group-2 input,
+.search-group-3 input {
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    background: transparent;
+    color: #333;
+    margin: 0;
+    outline: none;
+}
+
+.search-group-1 input {
+    width: 250px;
+}
+
+.search-group-2 input,
+.search-group-3 input {
+    width: 150px;
+}
+
+.search-group-1 input::placeholder {
+    color: #999;
+    font-weight: normal;
+}
+
+/* Capacity inputs - styling cho nhóm khách và phòng */
+.capacity-inputs {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    flex-wrap: nowrap;
+}
+
+.capacity-inputs label {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+    gap: 2px;
+}
+
+.capacity-inputs label:not(:last-child)::after {
+    content: ", ";
+    margin-left: 2px;
+    margin-right: 6px;
+}
+
+.capacity-inputs input {
+    border: none;
+    background: transparent;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    width: 20px;
+    text-align: center;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    order: -1; /* Đặt input trước text */
+}
+
+.capacity-inputs input:focus {
+    outline: none;
+    background: rgba(0, 123, 255, 0.1);
+    border-radius: 2px;
+}
+
+/* Đặt giá trị mặc định */
+.capacity-inputs input[name="adults"] {
+    /* Có thể set value mặc định qua JavaScript */
+}
+
+.capacity-inputs input[name="children"] {
+    /* Có thể set value mặc định qua JavaScript */
+}
+
+.capacity-inputs input[name="rooms"] {
+    /* Có thể set value mặc định qua JavaScript */
+}
+
+/* Nút tìm kiếm */
+.search-button {
+    background: transparent;
+    border: none;
+    padding: 12.7px;
+border-top-right-radius: 19px;
+    border-bottom-right-radius: 19px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button:hover {
+    background-color: #e94e00;
+}
+
+.search-button img {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) invert(1); /* Làm icon thành màu trắng */
+}
+
+/* Date input styling */
+input[type="date"] {
+    color: #333;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/* Number input styling */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .search-bar {
+        width: 96%;
+        margin-left: 20px;
+    }
+
+    .search-bar form {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 8px;
+    }
+
+    .search-group-1,
+    .search-group-2,
+    .search-group-3,
+    .search-group-4 {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        border-radius: 8px;
+        margin: 4px;
+        padding: 12px 16px;
+    }
+
+    .search-group-1 {
+        width: calc(100% - 8px);
+        margin-left: 4px;
+    }
+
+    .search-group-2,
+    .search-group-3 {
+        width: calc(50% - 8px);
+    }
+
+    .search-group-4 {
+        width: calc(100% - 8px);
+        border-bottom: none;
+    }
+
+    .search-button {
+        width: 100%;
+        border-radius: 8px;
+        margin: 4px;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-hotel {
+        padding: 16px;
+        margin: 10px;
+    }
+
+    .form-bar {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    .form-bar p {
+        padding-left: 0;
+        margin-bottom: 4px;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .search-bar form {
+        flex-direction: column;
+        background-color: transparent;
+        height: auto;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .search-group-1,
+    .search-group-2,
+    .search-group-3,
+    .search-group-4 {
+        width: 100%;
+        margin: 4px 0;
+        border: 2px solid #007bff;
+        border-radius: 8px;
+        padding: 16px;
+    }
+
+    .search-group-1 input,
+    .search-group-2 input,
+    .search-group-3 input {
+        width: 100%;
+    }
+
+    .capacity-inputs {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .capacity-inputs label {
+        flex-direction: column;
+        text-align: center;
+        gap: 4px;
+    }
+
+    .search-button {
+        background-color: #007bff;
+        border-radius: 8px;
+        padding: 16px;
+        margin: 8px 0;
+    }
+
+    .search-button:hover {
+        background-color: #0056b3;
+    }
+}
+@media (max-width: 480px) {
+    .search-hotel {
+        margin: 5px;
+        padding: 12px;
+    }
+
+    .search-group-1,
+    .search-group-2,
+    .search-group-3,
+    .search-group-4 {
+        padding: 12px;
+    }
+
+    .capacity-inputs {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .capacity-inputs label {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+
+.form-plane {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 26%;
+    font-weight: bold;
+}
+
+
+.form-place,.form-date{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.form-place p{
+    margin-right: 220px;
+    color: black;
+}
+
+#kh{
+    margin-left: 90px;
+}
+
+.form-date p{
+    margin-right: 110px;
+    color: white;
+}
+
+/* Căn các input thẳng hàng dưới form-bar */
+.input-plane{
+    width: 94.3%;
+    display: flex;
+    justify-content: center;
+}
+
+.booking-menu {
+    display: flex;
+    gap: 20px;
+    padding-top: 115px;
+    padding-bottom: 10px;
+    background: transparent;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    margin: 0px 38px;
+}
+
+.booking-item {
+    background: none;
+    border: none;
+    border: 1px solid transparent;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #E1E3E6;
+    padding: 8px 15px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-item img {
+    width: 30px;
+    margin-right: 8px;
+}
+
+.booking-item.active {
+    background-color: white;
+    color: #03121a;
+    border-color: #fff;
+}
+
+.booking-item:not(.active):hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.input-plane form {
+    display: flex;
+    align-items: center;
+    height: 58px;
+    border-radius: 20px;
+}
+
+.search-place,.book-plane{
+    background-color: #007bff;
+    border-radius: 20px;
+    display: flex;
+    padding: 4px;
+
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+.search-place{
+    margin-right: 100px;
+}
+/* Các khối input */
+.search-plane-1,.search-plane-2,.search-plane-3,.search-plane-4 {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #eee;
+    background-color: #fff;
+}
+
+.search-plane-1,.search-plane-3{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 7px 30px;
+}
+
+.search-plane-2,.search-plane-4{
+    padding: 7px 30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Icon */
+.search-plane-3 img,.search-plane-4 img {
+    width: 28px;
+    height: auto;
+}
+
+.search-plane-1 img,.search-plane-2 img{
+    width: 24px;
+    height: auto;
+}
+
+/* Input: chữ căn trái, không viền */
+.search-plane-1 input,.search-plane-2 input,.search-plane-3 input,.search-plane-4 input {
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    background: transparent;
+    width: 150px;
+    color: #333;
+margin: 0;
+}
+
+/* Nút tìm kiếm */
+
+.search-img {
+    background: transparent;
+    border: none;
+    padding: 12.7px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.button-search{
+    border-radius: 30px;
+    margin-left: 60px;
+    background-color: #007bff;
+
+
+}
+
+.search-img:hover {
+    background-color: #007bff;
+}
+
+.search-img img {
+    width: 22px;
+    height: 22px;
+}
+
+.search-btn {
+    width: 100%;
+    background: #008cff;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form input[type="submit"] {
+    border: none;         /* Bỏ viền */
+    outline: none;        /* Bỏ viền khi focus */
+    background: none;     /* Làm nền trong suốt (nếu muốn) */
+    cursor: pointer;     /* Tuỳ chỉnh cỡ chữ */
+    color: #000;          /* Tuỳ chỉnh màu chữ */
+}
+
+.code button {
+    padding: 6px 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.code button:hover {
+    background-color: #0056b3;
+}
+
+.code button.copied {
+    background-color: #28a745; /* Xanh lá khi copied */
+    transform: scale(1.05);
+}
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : May 18, 2025, 6:24:24 PM
+    Author     : nzero
+*/
+
+.header{
+    display: flex;
+    justify-content:  space-between;
+    vertical-align: top;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+#box{
+    transition: background-color 0.3s ease;
+}
+
+.interface {
+    width:100%;
+    height: 500px; /* hoặc dùng min-height nếu cần linh hoạt */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo{
+    padding-left: 30px;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.menu-header{
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+.font-img{
+    display: flex;
+    padding: 2px 10px;
+    vertical-align: middle;
+    margin-top: 2px;
+}
+
+.font-img a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.font-img img,.discount img{
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.button a.login,
+.button a.login-wel{
+    border: 1px solid #007BFF;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.task-header{
+    border: 1px solid;
+    background-color: #c69165;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.task-header img{
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 57%;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: none;
+    width: 300px;
+    margin-right: 28px;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0px;
+}
+
+.dropdown-menu ul li {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.dropdown-menu ul li img{
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.dropdown-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.login,.login-wel{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.register {
+    padding: 10px;
+    color: white;
+    border: 1px solid #007BFF;
+    background-color: #007BFF;
+    text-decoration: none;
+border-radius: 4px;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+.button img{
+    width: 35px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.menu{
+    padding-top: 10px;
+    padding-left: 22px;
+    padding-bottom: 10px;
+    border-block: 1px solid #68717640;
+}
+
+.menu a,.link-button{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: sans-serif;
+    color: white;
+}
+
+.font-img a, .menu a,.login-wel,.link-button {
+    transition: all 0.3s ease;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.link-button{
+    padding: 11.5px 5px;
+}
+
+.font-img a:hover,
+.menu a:hover,
+.login-wel a:hover,
+.link-button:hover{
+    background-color: rgba(255,255,255,0.1);
+    transform: scale(1.03);
+    color: #f0f0f0;
+}
+
+/* Tuỳ chọn override */
+.font-img a:hover.hover-black,
+.menu a:hover.hover-black,
+.login-wel:hover.hover-black,
+.link-button:hover.hover-black{
+    background-color: #00000040;
+}
+
+.font-img a:hover.hover-white,
+.menu a:hover.hover-white,
+.login-wel:hover.hover-white,
+.link-button:hover.hover-white{
+    background-color: #f2f3f3;
+    color: black;
+}
+
+.text-black {
+    color: black !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.white-bg {
+    background-color: white !important;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+.grey-bg{
+    background-color: #0D2C54;
+}
+
+.header-contain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.booking-menu {
+    display: flex;
+    gap: 20px;
+    padding-top: 115px;
+    padding-bottom: 10px;
+    background: transparent;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    margin: 0px 38px;
+}
+
+.booking-item {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #E1E3E6;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.booking-item img {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.booking-item.active {
+    background-color: white;
+    color: #03121a; /* xanh đậm như Booking.com */
+    border: 1px solid #fff;
+}
+
+.booking-item:not(.active):hover {
+    background-color: rgba(255,255,255,0.1);
+    color: #fff;
+}
+
+.booking-hotel {
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.hotel{
+    margin-bottom: 30px;
+}
+.hotelcs {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    gap: 6px;
+    padding: 3px 7px;
+    border-radius: 30px;
+    background-color: #03121a4d;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.hotelcs img {
+    width: 25px;
+    height: auto;
+    vertical-align: middle;
+}
+.hotelcs.active-hotel {
+    background-color: #0194f3;
+    color: white;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* căn giữa toàn bộ nội dung */
+    gap: 30px; /* khoảng cách giữa hai ảnh, chỉnh số tùy ý */
+    margin-top: 50px; /* tùy chỉnh thêm nếu cần căn giữa theo chiều dọc */
+}
+
+.image-container img {
+    width: 600px;
+    border-radius: 10px;
+    height: auto;
+}
+
+.content-sale {
+    width: 100%;
+    display: block;
+    justify-content: center; /* Căn giữa phần tử h1 */
+    padding-top: 40px;
+}
+
+.content-sale h1 {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28px;
+    width: 80%;
+    text-align: left;       /* Căn chữ về bên trái trong khối h1 */
+    padding-left: 10px;
+    margin:0 130px;              /* Xóa margin mặc định nếu cần */
+}
+
+.content-sale p{
+    width: 80%;
+    margin:-5px 130px;
+    padding-left: 10px;
+    text-align: left;
+    font-weight: 600;
+    color: gray;
+    line-height: 24px;
+}
+
+.content-sale-choice {
+    width: 80%;
+    padding-left: 125px; /* Căn lề trái */
+    padding-top: 30px;
+}
+
+.nav.navbar-nav {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* khoảng cách giữa các mục */
+}
+
+.nav.navbar-nav li {
+    display: inline;
+}
+
+.nav.navbar-nav li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav.navbar-nav li a:hover,
+.nav.navbar-nav li.active a {
+    background-color: #f2f2f2;
+    color: #007BFF;
+}
+
+
+/*  */
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f9fc;
+    margin: 0;
+}
+
+.container {
+    max-width: 82%;
+    margin: auto;
+    position: relative;
+    z-index: 1 !important; /* Đảm bảo thấp hơn header */
+}
+
+.voucher-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1 !important;
+}
+
+.voucher {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    position: relative;
+    z-index: 1 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.voucher:hover {
+    transform: translateY(-2px); /* Giảm độ nổi để tránh đè header */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.voucher .tag {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: orange;
+    color: white;
+    padding: 2px 6px;
+    font-size: 12px;
+    border-radius: 4px;
+    z-index: 2; /* Chỉ cao hơn voucher */
+}
+
+/* Đảm bảo tất cả element con của voucher có z-index thấp */
+.voucher * {
+    position: relative;
+    z-index: auto !important;
+}
+
+/* CSS cho tabs */
+.tabs {
+    margin: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.tab {
+    padding: 8px 16px;
+    background: #e0e0e0;
+    border: none;
+margin-right: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.tab.active {
+    background: #1e88e5;
+    color: white;
+    text-decoration: none;
+}
+
+.tab:hover {
+    background: #42a5f5;
+    color: white;
+    text-decoration: none;
+}
+
+/* CSS cho code section */
+.code {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px dashed #ccc;
+    position: relative;
+    z-index: 1;
+}
+
+.code button {
+    padding: 6px 12px;
+    border: none;
+    background: #90caf9;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+.section {
+    max-width: 82%;
+    margin: auto;
+    padding-top: 30px ;
+}
+
+.section-title {
+    color: #1e88e5;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background: #e6f0ff;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content h4 {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.rating {
+    color: #f5a623;
+    font-weight: bold;
+}
+
+.price {
+    color: #d0021b;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 0.9em;
+}
+
+.tag {
+    background-color: #fcebeb;
+    color: #d0021b;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    display: inline-block;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+/*  */
+
+
+/*  */
+.footer {
+    background-color: #1c2930;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 40px 30px;
+}
+
+.footer-col-1{
+    margin-right: -20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.certificates img {
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.cooperate {
+    display: flex;
+    align-items: center;
+    background-color: #354148;
+    padding: 10px 14px;
+    border-radius: 10px;
+    margin: 10px 0;
+    width: fit-content;
+}
+
+.cooperate img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.partner p {
+    font-weight: bold;
+    margin: 10px 0 5px;
+    padding-top: 2%;
+}
+
+.payment-logos img {
+    background-color: #fff;
+border-radius: 8px;
+    padding: 2px 6px;
+    margin: 2px;
+    width: 60px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.footer-title {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-title-1 {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.footer-col ul li {
+    margin: 15px 0px;
+    color: #b0b8bc;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer-col a{
+    text-decoration: none;
+    color: #b0b8bc;
+}
+
+.app-download img {
+    width: 140px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+/* PLANE */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5faff;
+}
+
+.hero {
+    /* position: relative; */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    border-radius: 24px;
+    margin: 20px;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 280px;
+}
+
+.image-plane-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.image-plane-container img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 140px;
+    left: 40px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.search-box {
+    position: absolute;
+    bottom: -160px;
+    left: 100px;
+    right: 100px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.trip-types {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.trip {
+    padding: 8px 16px;
+    background: #e6f3ff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.trip.selected {
+    background: #008cff;
+    color: white;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.switch-icon {
+    align-self: center;
+    font-size: 18px;
+}
+
+.options-row {
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.hotelcs,.flightcs {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    border-radius: 30px;
+    background-color: #03121a4d;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hotelcs{
+    padding: 3px 7px;
+}
+
+.flightcs{
+    padding: 8.5px 10px;
+}
+
+.active-content {
+    background-color: #007bff;
+    color: white;
+}
+
+.hotelcs img {
+    width: 25px;
+}
+
+.tab-content {
+    display: none;
+    margin: 10px 0px 0px 35px;
+}
+
+.tab-content.active {
+    display: flex;
+}
+
+/* Căn các nhãn nằm ngang */
+.form-bar {
+    display: flex;
+    margin-left: 40px;
+    font-weight: bold;
+}
+.form-bar p{
+    margin-right: 104px;
+}
+
+#hn{
+    margin-right: 175px;
+}
+
+/* Form tìm kiếm khách sạn */
+.search-hotel {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Căn các input thẳng hàng dưới form-bar */
+.search-bar {
+    width: 98%;
+    margin-left: 20px;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    height: 58px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Các khối input */
+.search-group-1,
+.search-group-2,
+.search-group-3,
+.search-group-4 {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #eee;
+    background-color: #fff;
+    height: 30px;
+}
+
+.search-group-1 {
+    margin-left: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 10px 21px;
+}
+
+.search-group-2 {
+    padding: 10px 31px;
+}
+
+.search-group-3 {
+    padding: 10px 23px;
+}
+
+.search-group-4 {
+    padding: 10px 40px;
+}
+
+.search-group-4:last-child {
+    border-right: none;
+}
+
+/* Icon */
+.search-group-1 img,
+.search-group-2 img,
+.search-group-3 img,
+.search-group-4 img {
+    width: 28px;
+    height: auto;
+    margin-right: 12px;
+}
+
+/* Input: chữ căn trái, không viền */
+.search-group-1 input,
+.search-group-2 input,
+.search-group-3 input {
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    background: transparent;
+    color: #333;
+    margin: 0;
+    outline: none;
+}
+
+.search-group-1 input {
+    width: 250px;
+}
+
+.search-group-2 input,
+.search-group-3 input {
+    width: 150px;
+}
+
+.search-group-1 input::placeholder {
+    color: #999;
+    font-weight: normal;
+}
+
+/* Capacity inputs - styling cho nhóm khách và phòng */
+.capacity-inputs {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    flex-wrap: nowrap;
+}
+
+.capacity-inputs label {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+    gap: 2px;
+}
+
+.capacity-inputs label:not(:last-child)::after {
+    content: ", ";
+    margin-left: 2px;
+    margin-right: 6px;
+}
+
+.capacity-inputs input {
+    border: none;
+    background: transparent;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    width: 20px;
+    text-align: center;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    order: -1; /* Đặt input trước text */
+}
+
+.capacity-inputs input:focus {
+    outline: none;
+    background: rgba(0, 123, 255, 0.1);
+    border-radius: 2px;
+}
+
+/* Đặt giá trị mặc định */
+.capacity-inputs input[name="adults"] {
+    /* Có thể set value mặc định qua JavaScript */
+}
+
+.capacity-inputs input[name="children"] {
+    /* Có thể set value mặc định qua JavaScript */
+}
+
+.capacity-inputs input[name="rooms"] {
+    /* Có thể set value mặc định qua JavaScript */
+}
+
+/* Nút tìm kiếm */
+.search-button {
+    background: transparent;
+    border: none;
+    padding: 12.7px;
+border-top-right-radius: 19px;
+    border-bottom-right-radius: 19px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button:hover {
+    background-color: #e94e00;
+}
+
+.search-button img {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) invert(1); /* Làm icon thành màu trắng */
+}
+
+/* Date input styling */
+input[type="date"] {
+    color: #333;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/* Number input styling */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .search-bar {
+        width: 96%;
+        margin-left: 20px;
+    }
+
+    .search-bar form {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 8px;
+    }
+
+    .search-group-1,
+    .search-group-2,
+    .search-group-3,
+    .search-group-4 {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        border-radius: 8px;
+        margin: 4px;
+        padding: 12px 16px;
+    }
+
+    .search-group-1 {
+        width: calc(100% - 8px);
+        margin-left: 4px;
+    }
+
+    .search-group-2,
+    .search-group-3 {
+        width: calc(50% - 8px);
+    }
+
+    .search-group-4 {
+        width: calc(100% - 8px);
+        border-bottom: none;
+    }
+
+    .search-button {
+        width: 100%;
+        border-radius: 8px;
+        margin: 4px;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-hotel {
+        padding: 16px;
+        margin: 10px;
+    }
+
+    .form-bar {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    .form-bar p {
+        padding-left: 0;
+        margin-bottom: 4px;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .search-bar form {
+        flex-direction: column;
+        background-color: transparent;
+        height: auto;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .search-group-1,
+    .search-group-2,
+    .search-group-3,
+    .search-group-4 {
+        width: 100%;
+        margin: 4px 0;
+        border: 2px solid #007bff;
+        border-radius: 8px;
+        padding: 16px;
+    }
+
+    .search-group-1 input,
+    .search-group-2 input,
+    .search-group-3 input {
+        width: 100%;
+    }
+
+    .capacity-inputs {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .capacity-inputs label {
+        flex-direction: column;
+        text-align: center;
+        gap: 4px;
+    }
+
+    .search-button {
+        background-color: #007bff;
+        border-radius: 8px;
+        padding: 16px;
+        margin: 8px 0;
+    }
+
+    .search-button:hover {
+        background-color: #0056b3;
+    }
+}
+@media (max-width: 480px) {
+    .search-hotel {
+        margin: 5px;
+        padding: 12px;
+    }
+
+    .search-group-1,
+    .search-group-2,
+    .search-group-3,
+    .search-group-4 {
+        padding: 12px;
+    }
+
+    .capacity-inputs {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .capacity-inputs label {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+
+.form-plane {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 26%;
+    font-weight: bold;
+}
+
+
+.form-place,.form-date{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.form-place p{
+    margin-right: 220px;
+    color: black;
+}
+
+#kh{
+    margin-left: 90px;
+}
+
+.form-date p{
+    margin-right: 110px;
+    color: white;
+}
+
+/* Căn các input thẳng hàng dưới form-bar */
+.input-plane{
+    width: 94.3%;
+    display: flex;
+    justify-content: center;
+}
+
+.booking-menu {
+    display: flex;
+    gap: 20px;
+    padding-top: 115px;
+    padding-bottom: 10px;
+    background: transparent;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    margin: 0px 38px;
+}
+
+.booking-item {
+    background: none;
+    border: none;
+    border: 1px solid transparent;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #E1E3E6;
+    padding: 8px 15px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-item img {
+    width: 30px;
+    margin-right: 8px;
+}
+
+.booking-item.active {
+    background-color: white;
+    color: #03121a;
+    border-color: #fff;
+}
+
+.booking-item:not(.active):hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.input-plane form {
+    display: flex;
+    align-items: center;
+    height: 58px;
+    border-radius: 20px;
+}
+
+.search-place,.book-plane{
+    background-color: #007bff;
+    border-radius: 20px;
+    display: flex;
+    padding: 4px;
+
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+.search-place{
+    margin-right: 100px;
+}
+/* Các khối input */
+.search-plane-1,.search-plane-2,.search-plane-3,.search-plane-4 {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #eee;
+    background-color: #fff;
+}
+
+.search-plane-1,.search-plane-3{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 7px 30px;
+}
+
+.search-plane-2,.search-plane-4{
+    padding: 7px 30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Icon */
+.search-plane-3 img,.search-plane-4 img {
+    width: 28px;
+    height: auto;
+}
+
+.search-plane-1 img,.search-plane-2 img{
+    width: 24px;
+    height: auto;
+}
+
+/* Input: chữ căn trái, không viền */
+.search-plane-1 input,.search-plane-2 input,.search-plane-3 input,.search-plane-4 input {
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    background: transparent;
+    width: 150px;
+    color: #333;
+margin: 0;
+}
+
+/* Nút tìm kiếm */
+
+.search-img {
+    background: transparent;
+    border: none;
+    padding: 12.7px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.button-search{
+    border-radius: 30px;
+    margin-left: 60px;
+    background-color: #007bff;
+
+
+}
+
+.search-img:hover {
+    background-color: #007bff;
+}
+
+.search-img img {
+    width: 22px;
+    height: 22px;
+}
+
+.search-btn {
+    width: 100%;
+    background: #008cff;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form input[type="submit"] {
+    border: none;         /* Bỏ viền */
+    outline: none;        /* Bỏ viền khi focus */
+    background: none;     /* Làm nền trong suốt (nếu muốn) */
+    cursor: pointer;     /* Tuỳ chỉnh cỡ chữ */
+    color: #000;          /* Tuỳ chỉnh màu chữ */
+}
+
+.code button {
+    padding: 6px 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.code button:hover {
+    background-color: #0056b3;
+}
+
+.code button.copied {
+    background-color: #28a745; /* Xanh lá khi copied */
+    transform: scale(1.05);
+}

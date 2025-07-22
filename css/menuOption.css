@@ -1,0 +1,163 @@
+/* base.css */
+/* Reset và base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: #f5f7fa;
+    min-height: 100vh;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Nút quay lại */
+body > a {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: #ffffff;
+    color: #666;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e8ed;
+    transition: all 0.2s ease;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+body > a:hover {
+    background: #f8f9fa;
+    color: #0066cc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+body > a::before {
+    content: '←';
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Layout chính */
+.body-container {
+    display: flex;
+    max-width: 1400px;
+    margin: 60px auto 0;
+    min-height: calc(100vh - 80px);
+    background: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Sidebar - .option */
+.option {
+    background: #ffffff;
+    border-right: 1px solid #e1e8ed;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.option .user-profile-header {
+    background: #f8f9fa;
+    padding: 20px;
+    border-bottom: 1px solid #e1e8ed;
+    text-align: center;
+}
+
+.option .user-avatar {
+    width: 60px;
+    height: 60px;
+    background: #667eea;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto 10px;
+}
+
+.option .user-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.option .user-priority {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #cd7f32;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.option .user-priority::before {
+    content: '🏆';
+    font-size: 14px;
+}
+
+.option ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.option li {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.option li:last-child {
+    border-bottom: none;
+}
+
+.option li a,
+.option li span {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.option li:hover a,
+.option li:hover span {
+    background: #f8f9fa;
+    color: #0066cc;
+}
+
+.option li.active a,
+.option li.active span {
+    background: #0066cc;
+    color: white;
+}
+
+.option li .icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
